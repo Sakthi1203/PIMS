@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/d70c1f6414.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        label {
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <form action="store.jsp" method="post">
+        <div class="inner">
+            <div class="sign-form">
+                <h2 class="h21"> Sign up</h2>
+                <div class="container">
+                    <p>Email</p>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope"></i></span>
+                        <input type="text" class="form-control" placeholder="Type your email" aria-label="Username"
+                            aria-describedby="addon-wrapping" name="remail" required>
+                    </div>
+                    <br>
+                    <p>Username</p>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+                        <input type="text" class="form-control" placeholder="Type your username" aria-label="Username"
+                            aria-describedby="addon-wrapping" name="rusername" required>
+                    </div>
+                    <br>
+                    <p>Password</p>
+                    <div class="input-group flex-nowrap">
+                        <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control" placeholder="Enter your DOB" onfocus="(this.type='date')"
+                            aria-label="Username" aria-describedby="addon-wrapping" name="rpassword" required>
+                    </div>
+                    <br>
+                   
+                    <br>
+                    <button class="btn btn1" type="submit" value="Sign up">Register</button>
+                </div>
+            </div>
+            <img class="img" src="img/Sign up-pana.png" alt="">
+        </div>
+    </form>
+</body>
+
+</html>

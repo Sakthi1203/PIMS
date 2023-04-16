@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        background: #f4f3f8;
+        background: -moz-linear-gradient(
+          45deg,
+          #f4f3f8 3%,
+          #e0e6fc 24%,
+          #bdd0fb 47%,
+          #e6ebf5 71%,
+          #d4d4f6 100%
+        );
+        background: -webkit-linear-gradient(
+          45deg,
+          #f4f3f8 3%,
+          #e0e6fc 24%,
+          #bdd0fb 47%,
+          #e6ebf5 71%,
+          #d4d4f6 100%
+        );
+        background: linear-gradient(
+          45deg,
+          #f4f3f8 3%,
+          #e0e6fc 24%,
+          #bdd0fb 47%,
+          #e6ebf5 71%,
+          #d4d4f6 100%
+        );
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f3f8', endColorstr='#d4d4f6',GradientType=1 );
+      }
+      .details {
+        background-color: #fff9f9;
+        width: 1200px;
+        height: 1425px;
+        padding: 30px;
+        position: relative;
+        left: 160px;
+        border-radius: 20px;
+        font-family: "Poppins", sans-serif;
+      }
+      h1 {
+        font-family: "Roboto Slab", serif;
+        padding: 30px;
+      }
+      .info {
+        color: #6e5c6e;
+      }
+      .btn {
+        background-color: #1d0d90;
+        border: none;
+        width: 85px;
+      }
+    </style>
+    <h1>Welcome you have successfully signed in!</h1>
+    <form action="main1b.jsp" method="post">
+      <div class="details">
+        <table class="" align="center" cellpadding="10">
+          <tr>
+            <td>First Name</td>
+            <td>
+              <input type="text" class="info" name="tfname" maxlength="30" />
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name</td>
+            <td>
+              <input type="text" class="info" name="tlname" maxlength="30" />
+            </td>
+          </tr>
+          <tr>
+            <td>Date Of Birth</td>
+            <td>
+              <input type="date" class="info" name="tdate" />
+            </td>
+          </tr>
+          <tr>
+            <td>Height</td>
+            <td>
+              <input type="text" class="info" name="theight" maxlength="3" />
+            </td>
+          </tr>
+          <tr>
+            <td>Weight</td>
+            <td>
+              <input type="text" class="info" name="tweight" maxlength="3" />
+            </td>
+          </tr>
+          <tr>
+            <td>Blood Group</td>
+            <td><input type="text" class="info" name="tbgroup" /></td>
+          </tr>
+          <tr>
+            <td>Nationality</td>
+            <td><input type="text" class="info" name="tnationality" /></td>
+          </tr>
+          <tr>
+            <td>Religion</td>
+            <td><input type="text" class="info" name="treligion" /></td>
+          </tr>
+          <tr>
+            <td>Mother Tongue</td>
+            <td><input type="text" class="info" name="tmothertongue" /></td>
+          </tr>
+          <tr>
+            <td>Caste</td>
+            <td><input type="text" class="info" name="tcaste" /></td>
+          </tr>
+          <tr>
+            <td>Email Id</td>
+            <td>
+              <input type="text" class="info" name="temailid" maxlength="100" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gender</td>
+            <td>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name=" tgender"
+                  id="flexRadioDefault1"
+                  value="Male"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Male
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="tgender"
+                  id="flexRadioDefault1"
+                  value="Female"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Female
+                </label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number<br /></td>
+            <td>
+              <input type="text" class="info" name="tphoneno" maxlength="10" />
+            </td>
+          </tr>
+          <tr>
+            <td>Adhar Number<br /></td>
+            <td>
+              <input
+                type="text"
+                class="info"
+                name="taadhar"
+                maxlength="12"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>PAN Number<br /></td>
+            <td>
+              <input type="text" class="info" name="tpan" maxlength="10" />
+            </td>
+          </tr>
+          <tr>
+            <td>Hobbies<br /></td>
+            <td><input type="text" class="info" name="thobbies" /></td>
+          </tr>
+          <tr>
+            <td>Qualification <br /><br /><br /><br /><br /><br /><br /></td>
+            <td>
+              <table>
+                <tr>
+                  <td align="center"><b>SI.no</b></td>
+                  <td align="center"><b>&nbsp&nbsp&nbsp&nbspExamination</b></td>
+                  <td align="center"><b>Board</b></td>
+                  <td align="center"><b>Percentage</b></td>
+                  <td align="center"><b>Passed out</b></td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Class X</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tClassX_Board"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tClassX_Percentage"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tClassX_Year_of_passing"
+                      maxlength="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Class XII</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tClassXII_Board"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tClassXII_Percentage"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tClassXII_Year_of_passing"
+                      maxlength="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Graduation</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tGraduation_Board"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tGraduation_Percentage"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tGraduation_Year_of_passing"
+                      maxlength="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Masters</td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tMasters_Board"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tMasters_Percentage"
+                      maxlength="30"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="text"
+                      class="info"
+                      name="tMasters_Year_of_passing"
+                      maxlength="30"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td align="center"></td>
+                  <td align="center"></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Address <br /><br /><br /></td>
+            <td>
+              <textarea
+                name="taddress"
+                class="info"
+                rows="4"
+                cols="30"
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>
+              <input type="text" class="info" name="tcity" maxlength="30" />
+            </td>
+          </tr>
+          <tr>
+            <td>Pin Code</td>
+            <td>
+              <input type="text" class="info" name="tPin_code" maxlength="6" />
+            </td>
+          </tr>
+          <tr>
+            <td>State</td>
+            <td><input type="text" class="info" name="tstate" /></td>
+          </tr>
+          <tr>
+            <td>Country</td>
+            <td><input type="text" class="info" name="tcountry" /></td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <input class="btn btn-primary" type="submit" value="Submit" />
+              <input class="btn btn-primary" type="reset" value="Reset" />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>
